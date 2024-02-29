@@ -1,4 +1,4 @@
-#criar um jogo de pedra, papel, tesoura ou um jogo de advinhacao
+#criar um jogo de pedra, papel, tesoura 
 from PIL import ImageTk
 from tkinter import *
 import tkinter
