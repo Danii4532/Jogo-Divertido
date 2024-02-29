@@ -104,7 +104,6 @@ def jogo_com_interface():
     def Escolha_computador():
         lista = ['PEDRA','PAPEL','TESOURA']
         escolhido = random.choice(lista)
-        #escolha_computador.config(text='ESCOLHENDO',font=('Arial',16))
         for _ in range(10):
             escolha_computador.config(text=random.choice(lista),font=('Arial',16))
             janela.update()
@@ -113,7 +112,6 @@ def jogo_com_interface():
 
         if escolha_computador != '' and resultado != '':
             analise_vencedor()                      
-        #escolha_computador.config(text=escolhido,font=('Arial',16))
               
     
     def Novajanela():
@@ -166,10 +164,6 @@ def jogo_com_interface():
             lista_jogadas1.insert(tkinter.END,f'{j+1}° partida: ', lista_jogadas[j])
             lista_jogadas1.insert(tkinter.END, '\n')
             
-            '''y1+=35        
-            jogada1 = tkinter.Label(janela_historico,text='jogada',font=('Arial',16),background='yellow')
-            jogada1.place(x=x1,y=y1+30)
-            '''
        
         janela_historico.mainloop()
   
